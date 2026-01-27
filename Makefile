@@ -1,4 +1,4 @@
-BINS=bounce thread
+BINS=bounce thread fork pipe
 CFLAGS=-ggdb3
 LIBS=-lglut -lglfw -l GL -lGLEW -lm -lpthread
 
