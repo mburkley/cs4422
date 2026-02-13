@@ -1,6 +1,6 @@
-BINS=bounce thread fork pipe
+BINS=llist-deadlock thread fork pipe
 CFLAGS=-ggdb3
-LIBS=-lglut -lglfw -l GL -lGLEW -lm -lpthread
+LIBS=-lm -lpthread
 
 all: $(BINS)
 
