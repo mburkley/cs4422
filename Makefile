@@ -1,6 +1,6 @@
-BINS=bounce thread
+BINS=list-mutex llist-deadlock thread fork pipe maps
 CFLAGS=-ggdb3
-LIBS=-lglut -lglfw -l GL -lGLEW -lm -lpthread
+LIBS=-lm -lpthread
 
 all: $(BINS)
 

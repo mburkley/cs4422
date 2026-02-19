@@ -9,13 +9,13 @@
 
 /*  Tracks the heap size and compares to a static value.  Only reports a change
  *  if the new size differs from previous. */
-static void analyseHeap (int size)
+static void analyseHeap (int size, char *line)
 {
     static int lastSize;
 
     if (size != lastSize)
     {
-        printf ("heap size=%d (change=%x)\n", size, size-lastSize);
+        printf ("%s heap size=%d (change=%x)\n", line, size, size-lastSize);
         lastSize = size;
     }
 }
@@ -45,7 +45,7 @@ static void parseLine (char *line)
     }
     if (!strcmp (path, "[heap]"))
     {
-        analyseHeap (to-from);
+        analyseHeap (to-from, line);
     }
 }
 
