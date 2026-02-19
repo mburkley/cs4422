@@ -1,4 +1,4 @@
-BINS=llist-deadlock thread fork pipe
+BINS=list-mutex llist-deadlock thread fork pipe maps
 CFLAGS=-ggdb3
 LIBS=-lm -lpthread
 
